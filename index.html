@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+    <body>
+     <main>
+      <div class="stepper">
+        <div class="step--1 step-active">Step 1</div>
+        <div class="step--2">Step 2</div>
+        <div class="step--3">Step 3</div>
+        <div class="step--4">Finish</div>
+      </div>
+      <form class="form form-active">
+        <div class="form--header-container">
+          <h1 class="form--header-title">
+            <i class="bi bi-award"></i> Leadership & Outspoken  
+          </h1>
+
+          <p class="form--header-text">
+            Student Awards Batch 8
+          </p>
+        </div>
+        <label>Leadership Award  <i class="bi bi-award"></i></label><br>
+        <select id="leadership" class="decorated">
+            <option  value="no choice">--Make your choice--</option>
+            <option value="Adeleke Adedeji">Adeleke Adedeji</option>
+            <option value="Taiwo Olojede">Taiwo Olojede</option>
+        </select>
+        <br>
+        <label>Most Outspoken Student <i class="bi bi-megaphone"></i></label><br>
+        <select id="outSpoken">
+            <option value="no choice">--Make your choice--</option>
+            <option value="Abolarin James">Abolarin James</option>
+            <option value="Ayomide Miana">Ayomide Miana</option>
+            <option value="Oladiran Jide">Oladiran Jide</option>
+        </select>
+        <button class="form__btn" id="btn-1">Next</button>
+      </form>
+      <form class="form">
+        <div class="form--header-container">
+          <h1 class="form--header-title">
+            <i class="bi bi-person-standing-dress"></i> Best Dressed (Male & Female)
+          </h1>
+
+          <p class="form--header-text">
+            Student Awards Batch 8
+          </p>
+        </div>
+         <label>Best Dresses Male <i class="bi bi-person-standing-dress"></i></label><br>
+        <select id="bestDressedMale">
+            <option  value="no choice">--Make your choice--</option>
+            <option value="Emmanuel Nwanya">Emmanuel Nwanya</option>
+        </select>
+
+        <br>
+
+        <label>Best Dressed Female <i class="bi bi-person-standing-dress"></i></label><br>
+        <select id="bestDressedFemale">
+            <option  value="no choice">--Make your choice--</option>
+            <option value="Destiny Jacob">Destiny Jacob</option>
+            <option value="Savage Aliyat">Savage Aliyat</option>
+            <option value="Aje Omolola">Aje Omolola</option>
+        </select>
+        <button class="form__btn" id="btn-2-prev">Previous</button>
+        <button class="form__btn" id="btn-2-next">Next</button>
+      </form>
+      <form class="form">
+        <div class="form--header-container">
+          <h1 class="form--header-title">
+            <i class="bi bi-person-arms-up"></i> Most Popular (Male & Female)
+          </h1>
+
+          <p class="form--header-text">
+            Student Awards Batch 8
+          </p>
+        </div>
+         <label>Most Popular Male <i class="bi bi-person-arms-up"></i></label><br>
+        <select id="mostPopularMale">
+            <option  value="no choice">--Make your choice--</option>
+            <option value="Adedeji Adeleke">Adedeji Adeleke</option>
+            <option value="West Boma">West Boma</option>
+            <option value="Nwanya Ezekiel">Nwanya Ezekiel</option>
+        </select>
+
+        <br>
+
+        <label>Most Popular Female <i class="bi bi-person-arms-up"></i></label><br>
+        <select id="mostPopularFemale">
+            <option  value="no choice">--Make your choice--</option>
+            <option value="Ayomide Miana">Ayomide Miana</option>
+            <option value="Edeh Mary Christabel">Edeh Mary Christabel</option>
+            <option value="Nwanya Ezekiel">Amaeshi Tricia</option>
+        </select>
+        <br>
+        <br>
+        <input type="text" placeholder="Confirm choices with your name" id="fullName"/>
+        <button class="form__btn" id="btn-3" onclick="submitVotes()">Enter Vote</button>
+      </form>
+      <div class="form--message"></div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-database.js"></script>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+    <script src="stepper.js"></script>
+</body>
+</html>
+  
